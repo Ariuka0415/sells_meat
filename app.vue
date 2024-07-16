@@ -1,5 +1,3 @@
 <template>
-  <div>
-    sdsdd
-  </div>
+  <Navbar />
 </template>
