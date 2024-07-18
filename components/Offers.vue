@@ -109,7 +109,7 @@
         </div>
       </div>
       <div
-        class="helper4 flex m-auto items-center justify-center my-10 mr-[60px]"
+        class="helper4 flex m-auto items-center justify-center my-10 mr-[60px] mb-[150px]"
       >
         <div
           class="helperLeft w-[45%] bg-[#ffffff] shadow-xl px-12 py-20 relative left-[60px]"

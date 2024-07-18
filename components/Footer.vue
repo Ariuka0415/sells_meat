@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full h-[70vh] bg-[#252420] mt-[100px] text-[#ffffff] flex flex-col justify-center items-center gap-[30px]"
+    class="w-full h-[70vh] bg-[#252420] text-[#ffffff] flex flex-col justify-center items-center gap-[30px]"
   >
     <img
       class="w-[200px]"

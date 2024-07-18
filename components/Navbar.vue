@@ -92,7 +92,7 @@
         src="file:///C:/Users/Swift%203/Downloads/Vector%20(3).svg"
         alt=""
       />
-      <NuxtLink to="LoginSignup">
+      <NuxtLink to="Login">
         <button
           class="loginBtn w-[130px] h-[40px] outline-none border-border rounded-[75px] text-[#515151] text-[16px] font-medium bg-white cursor-pointer border border-gray-400 hover:bg-[#f3f3f3] duration-300"
         >
@@ -106,11 +106,11 @@
           alt=""
         />
       </NuxtLink>
-        <div
-          class="nav-cart-count w-[18px] h-[18px] flex justify-center items-center mt-[-35px] ml-[-35px] text-[14px] bg-red-600 text-white rounded-[10px]"
-        >
-          0
-        </div>
+      <div
+        class="nav-cart-count w-[18px] h-[18px] flex justify-center items-center mt-[-35px] ml-[-35px] text-[14px] bg-red-600 text-white rounded-[10px]"
+      >
+        0
+      </div>
     </div>
   </div>
 </template>
