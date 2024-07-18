@@ -15,9 +15,9 @@
         Ховдын хаанаас ч хамгийн чанартай махыг таньд хүргэж өгнө.
       </p>
       <button
-        class="text-[#462516] flex justify-center items-center w-[200px] h-[50px] rounded-[75px] bg-[#ffffff] text-[15px] font-semibold mt-6 cursor-pointer hover:bg-[#eae9e9] hover:shadow-md transition duration-300"
+        class="text-[#462516] flex justify-center items-center w-[200px] h-[50px] rounded-[75px] bg-[#ffffff] text-[20px] font-semibold mt-6 cursor-pointer hover:bg-[#eae9e9] hover:shadow-md transition duration-300"
       >
-        Одоо эхэл
+        Захиалга өгөх
       </button>
     </div>
   </div>
@@ -27,7 +27,7 @@
 .hero {
   height: calc(
     100vh - 80px
-  ); /* Adjusts the height to be full viewport height minus 80px */
+  ); 
 }
 .heroImg {
   filter: brightness(70%);

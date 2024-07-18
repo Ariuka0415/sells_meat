@@ -1,8 +1,6 @@
 <template>
-  <div class="popular flex flex-col items-center gap-[10px] h-[90vh]">
-    <h1 class="text-[#312828] text-[50px] font-bold my-4">
-      Хамгийн их зарагдсан
-    </h1>
+  <div class="popular flex flex-col items-center gap-[20px] my-[100px] ">
+    <h1 class="text-[#312828] text-[50px] font-bold">Хамгийн их зарагдсан</h1>
     <hr class="w-[200px] h-[2px] rounded-[10px] bg-[#312828]" />
     <div class="popular-item flex gap-6 mt-[50px]">
       <!-- v-bind hiihgui bol ajildggun bnoo -->
