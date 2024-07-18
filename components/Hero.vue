@@ -25,9 +25,7 @@
 
 <style scoped>
 .hero {
-  height: calc(
-    100vh - 80px
-  ); 
+  height: calc(100vh - 80px);
 }
 .heroImg {
   filter: brightness(70%);
