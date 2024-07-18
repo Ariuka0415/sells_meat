@@ -15,7 +15,7 @@ export default {
       },
       border: {
         'border': '1px solid #7a7a7a'
-      }
+      },
     },
   },
   plugins: [],
