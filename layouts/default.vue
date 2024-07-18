@@ -3,6 +3,6 @@
     <Navbar />
     <!-- any page -->
     <slot />
-    <!-- footer -->
+    <Footer />
   </div>
 </template>
