@@ -2,6 +2,8 @@
   <div>
     <Hero />
     <Popular />
+    <WhatLetter />
+    <SpecialProducts />
     <Offers />
   </div>
 </template>
