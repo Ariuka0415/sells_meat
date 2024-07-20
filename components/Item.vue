@@ -1,6 +1,6 @@
 <template>
   <div class="item w-[250px] hover:scale-105 hover:duration-[0.6s]">
-    <img class="w-[250px]" :src="image" alt="" />
+    <img class="w-[250px] h-[250px] object-cover" :src="image" alt="" />
     <p class="my-[6px] mx-[0px] text-[#312828] font-semibold">{{ name }}</p>
     <div class="item-prices flex gap-[20px] text-[18px]">
       <div class="item-price-new text-[#312828] font-bold">
