@@ -1,79 +1,18 @@
 <template>
-  <div class="meat-category">
-    <div class="tagAndText">
-      <img
-        class="category-img w-full block object-cover"
-        :src="banner"
-        alt=""
-      />
-      <div class="back uppercase flex justify-center items-center my-5">
-        <nav class="flex items-center space-x-4 font-medium text-[#3d4142]">
-          <NuxtLink to="/" class="border-r border-gray-400 pr-4 cursor-pointer">
-            <a class="hover:underline hover:text-[#c96167]">HOME</a>
-          </NuxtLink>
-          <NuxtLink
-            to="/Cart"
-            class="border-r border-gray-400 pr-4 cursor-pointer"
-          >
-            <a class="hover:underline hover:text-[#c96167]">КАРТны хэсэг</a>
-          </NuxtLink>
-          <NuxtLink to="/Login">
-            <a class="hover:underline hover:text-[#c96167] cursor-pointer"
-              >НЭВТРЭХ</a
-            >
-          </NuxtLink>
-        </nav>
-      </div>
-      <h1
-        class="flex justify-center items-center uppercase font-semibold text-[25px] text-[#3d4142] my-12"
-      >
-        хамгийн чанартайг манайхаас
-        <span class="font-bold mx-2"> "{{ category }}"</span>
-      </h1>
-    </div>
-    <div
-      class="indexSort flex my-[0px] mx-[100px] justify-between items-center text-[20px] text-[#3d4142]"
-    >
-      <p><span class="font-semibold">Нийт бүтээгдэхүүнээс </span>Үзэлтэд 1-4</p>
-      <div
-        class="sort py-[10px] px-5 rounded-[40px] border-[1px solid #888] flex justify-center items-center"
-      >
-        Эрэмбэлэх
-        <Icon name="material-symbols:arrow-drop-down" style="color: black" />
-      </div>
-    </div>
-    <div class="products mt-5 mb-20 mx-[100px] grid grid-cols-4 gap-6">
-      <Item
-        v-for="(item, id) in filteredProducts"
-        :key="id"
-        :id="item.id"
-        :image="item.image"
-        :name="item.name"
-        :old_price="item.old_price"
-        :new_price="item.new_price"
-        :category="item.category"
-      />
-    </div>
+  <div class="crum">
+    HOME
+    <Icon name="material-symbols:arrow-forward-ios" style="color: black" />
+    SHOP
+    <Icon name="material-symbols:arrow-forward-ios" style="color: black" />
+    {{ all_product.category }}
+    <Icon name="material-symbols:arrow-forward-ios" style="color: black" />
+    {{ all_product.name }}
   </div>
 </template>
-
 <script setup>
 const route = useRoute();
-const category = route.params.category;
+const id = route.params.id;
 
-const banners = {
-  хонь: "https://www.dartagnan.com/dw/image/v2/BJQL_PRD/on/demandware.static/-/Sites-dartagnan-Library/default/dw3825e093/Lamb_Category_Banner.jpg",
-  үхэр: "https://www.dartagnan.com/dw/image/v2/BJQL_PRD/on/demandware.static/-/Sites-dartagnan-Library/default/dw131e943d/catPageBanner/beef_category_evergreen.jpg",
-  ямаа: "https://www.dartagnan.com/dw/image/v2/BJQL_PRD/on/demandware.static/-/Sites-dartagnan-Library/default/dw28137b9e/Duck_Category_Banner_New.jpg",
-  тахиа:
-    "https://www.dartagnan.com/dw/image/v2/BJQL_PRD/on/demandware.static/-/Sites-dartagnan-Library/default/dw4f115daa/catPageBanner/chicken_category.jpg",
-  гахай:
-    "https://www.dartagnan.com/dw/image/v2/BJQL_PRD/on/demandware.static/-/Sites-dartagnan-Library/default/dw877fe14c/Pork_Category_Banner2.jpg",
-  бусад:
-    "https://www.dartagnan.com/dw/image/v2/BJQL_PRD/on/demandware.static/-/Sites-dartagnan-Library/default/dw24799da0/catPageBanner/venison_category.jpg",
-};
-
-const banner = banners[category];
 const all_product = [
   {
     id: 1,
@@ -328,7 +267,4 @@ const all_product = [
     old_price: 100.9,
   },
 ];
-const filteredProducts = computed(() => {
-  return all_product.filter((item) => item.category === category);
-});
 </script>
