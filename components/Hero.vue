@@ -6,16 +6,16 @@
       alt=""
     />
     <div
-      class="absolute flex flex-col items-center justify-center left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-opacity-75 bg-[#462516] rounded-lg p-8 shadow-lg sm:w-full sm:h-screen sm:mt-[40px] sm:rounded-none"
+      class="absolute flex flex-col items-center justify-center left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-opacity-75 bg-[#462516] rounded-lg p-8 shadow-lg sm:w-full sm:h-screen  sm:rounded-none md:h-[35%] md:w-[60%] sm:relative"
     >
-      <h1 class="text-[40px] text-white font-bold mb-4">
+      <h1 class="text-[40px] text-white font-bold mb-4 md:text-[30px] md:mb-2">
         Та захиал Бид хүргэж өгөе
       </h1>
-      <p class="text-white text-lg">
+      <p class="text-white text-lg md:text-[15px]">
         Ховдын хаанаас ч хамгийн чанартай махыг таньд хүргэж өгнө.
       </p>
       <button
-        class="text-[#462516] flex justify-center items-center w-[200px] h-[45px] rounded-[75px] bg-[#ffffff] text-[16px] font-semibold mt-6 cursor-pointer hover:bg-[#eae9e9] hover:shadow-md transition duration-300"
+        class="text-[#462516] flex justify-center items-center w-[200px] h-[45px] rounded-[75px] bg-[#ffffff] text-[16px] font-semibold mt-6 cursor-pointer hover:bg-[#eae9e9] hover:shadow-md transition duration-300 md:w-[150px] md:h-[35px] md:text-[10px]"
       >
         Захиалга өгөх
       </button>

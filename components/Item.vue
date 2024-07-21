@@ -1,10 +1,10 @@
 <template>
   <div
-    class="item w-[250px] hover:scale-105 hover:duration-[0.6s] xl:w-[220px] lg:w-[170px] md:w-[120px] md:text-[12px] sm:w-[160px]"
+    class="item w-[250px] hover:scale-105 hover:duration-[0.6s] xl:w-[220px] lg:w-[170px] md:w-[140px] md:text-[12px] sm:w-[160px]"
   >
     <NuxtLink :to="`/_category/${category1}/${id}`">
       <img
-        class="w-[250px] h-[250px] object-cover xl:w-[220px] lg:w-[170px] md:w-[120px] sm:w-[160px]"
+        class="w-[250px] h-[250px] object-cover xl:w-[220px] lg:w-[170px] md:w-[140px] sm:w-[160px]"
         :src="image"
         alt=""
       />

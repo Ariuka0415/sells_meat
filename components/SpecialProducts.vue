@@ -1,10 +1,18 @@
 <template>
   <div
-    class="special-products flex flex-col items-center gap-[10px] my-[100px]"
+    class="special-products flex flex-col items-center gap-[10px] my-[80px] md:gap-[6px] sm:my-10"
   >
-    <h1 class="text-[#312828] text-[50px] font-bold">Онцлох бүтээгдэхүүнүүд</h1>
-    <hr class="w-[200px] h-[2px] rounded-[10px] bg-[#312828]" />
-    <div class="products grid grid-cols-4 mt-[50px] gap-[30px]">
+    <h1
+      class="text-[#312828] text-[50px] font-bold xl:text-[40px] lg:text-[30px] md:text-[20px]"
+    >
+      Онцлох бүтээгдэхүүнүүд
+    </h1>
+    <hr
+      class="w-[200px] h-[2px] rounded-[10px] bg-[#312828] mb-6 xl:w-[160px] xl:h-[4px] lg:w-[120px] lg:h-[3px] md:w-[100px]"
+    />
+    <div
+      class="products grid grid-cols-4 mt-[50px] gap-[30px] xl:gap-5 xl:mt-[30px] lg:gap-[15px] lg:mt-[3px] md:gap-[5px] sm:grid sm:grid-cols-2 sm:gap-5"
+    >
       <Item
         v-for="(item, i) in specialProducts"
         :key="i"
