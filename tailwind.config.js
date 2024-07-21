@@ -9,6 +9,22 @@ export default {
     "./error.vue",
   ],
   theme: {
+    screens: {
+      '2xl': {'max': '1535px'},
+      // => @media (max-width: 1535px) { ... }
+
+      'xl': {'max': '1279px'},
+      // => @media (max-width: 1279px) { ... }
+
+      'lg': {'max': '1023px'},
+      // => @media (max-width: 1023px) { ... }
+
+      'md': {'max': '767px'},
+      // => @media (max-width: 767px) { ... }
+
+      'sm': {'max': '639px'},
+      // => @media (max-width: 639px) { ... }
+    },
     extend: {
       boxShadow: {
         'boxShadow': '0 1px 3px -2px black',
@@ -18,6 +34,19 @@ export default {
       },
       gridTemplateColumns: {
         'custom': '1fr 1.5fr 1fr 1fr 1fr 1fr',
+      },
+      rotate: {
+        '90': '90deg',
+      },
+      scale: {
+        '80': '0.8',
+      },
+      transitionProperty: {
+        'rotate': 'transform',
+        'scale': 'transform',
+      },
+      transitionDuration: {
+        'slow': '500ms',
       },
     },
   },
