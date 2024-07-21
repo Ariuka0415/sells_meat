@@ -212,7 +212,6 @@ const toggle = ref(false);
 
 function toggleMenu() {
   toggle.value = !toggle.value;
-  console.log("clik", toggle.value);
 }
 
 function type(animalType) {

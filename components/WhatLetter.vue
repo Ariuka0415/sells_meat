@@ -1,6 +1,6 @@
 <template>
   <div
-    class="what-letter h-[100vh] bg-[#fbfaf8] flex flex-col items-center px-20"
+    class="what-letter  bg-[#fbfaf8] flex flex-col items-center px-20"
   >
     <h1 class="text-[35px] font-bold mt-[50px] text-[#312828]">
       Бид юу хүргэдэг вэ?

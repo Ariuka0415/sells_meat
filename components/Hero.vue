@@ -1,12 +1,12 @@
 <template>
   <div class="hero relative flex flex-col">
     <img
-      class="heroImg w-full h-[calc(100vh-80px)] object-cover"
+      class="heroImg w-full h-[calc(100vh-80px)] object-cover sm:hidden"
       src="https://porterroad.com/cdn/shop/files/FarmRittenbery-7869_lo_1880x1050.jpg?v=1614333080"
       alt=""
     />
     <div
-      class="absolute flex flex-col items-center justify-center left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-opacity-75 bg-[#462516] rounded-lg p-8 shadow-lg"
+      class="absolute flex flex-col items-center justify-center left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-opacity-75 bg-[#462516] rounded-lg p-8 shadow-lg sm:w-full sm:h-screen sm:mt-[40px] sm:rounded-none"
     >
       <h1 class="text-[40px] text-white font-bold mb-4">
         Та захиал Бид хүргэж өгөе
