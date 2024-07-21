@@ -1,9 +1,17 @@
 <template>
-  <div class="item w-[250px] hover:scale-105 hover:duration-[0.6s]">
+  <div
+    class="item w-[250px] hover:scale-105 hover:duration-[0.6s] xl:w-[220px] lg:w-[170px] md:w-[120px] md:text-[12px] sm:w-[160px]"
+  >
     <NuxtLink :to="`/_category/${category1}/${id}`">
-      <img class="w-[250px] h-[250px] object-cover" :src="image" alt="" />
+      <img
+        class="w-[250px] h-[250px] object-cover xl:w-[220px] lg:w-[170px] md:w-[120px] sm:w-[160px]"
+        :src="image"
+        alt=""
+      />
       <p class="my-[6px] mx-[0px] text-[#312828] font-semibold">{{ name }}</p>
-      <div class="item-prices flex gap-[20px] text-[18px]">
+      <div
+        class="item-prices flex gap-[20px] text-[18px] xl:text-[14px] lg:text-[13px] md:text-[12px]"
+      >
         <div class="item-price-new text-[#312828] font-bold">
           ${{ new_price }}
         </div>
