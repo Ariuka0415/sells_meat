@@ -1,6 +1,6 @@
 <template>
   <div class="item w-[250px] hover:scale-105 hover:duration-[0.6s]">
-    <NuxtLink :to="`/category/${category1}/${id}`">
+    <NuxtLink :to="`/_category/${category1}/${id}`">
       <img class="w-[250px] h-[250px] object-cover" :src="image" alt="" />
       <p class="my-[6px] mx-[0px] text-[#312828] font-semibold">{{ name }}</p>
       <div class="item-prices flex gap-[20px] text-[18px]">
@@ -28,5 +28,4 @@ const props = defineProps({
   category: String,
 });
 const category1 = props.category;
-console.log(category1);
 </script>

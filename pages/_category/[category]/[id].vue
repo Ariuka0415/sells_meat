@@ -10,8 +10,14 @@
   </div>
 </template>
 <script setup>
+import { useRoute } from "vue-router";
+
 const route = useRoute();
+const category = route.params.category;
 const id = route.params.id;
+
+console.log("Category:", category);
+console.log("ID:", id);
 
 const all_product = [
   {
