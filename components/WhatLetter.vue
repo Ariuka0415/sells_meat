@@ -58,10 +58,12 @@
         </p>
       </div>
     </div>
-    <button
-      class="text-[#ffffff] flex justify-center items-center w-[200px] h-[45px] bg-[#c53831] text-[16px] font-semibold my-6 cursor-pointer rounded-[75px] hover:bg-[#862d28] hover:shadow-md transition duration-300"
-    >
-      Карт үзэх
-    </button>
+    <NuxtLink to="/Cart">
+      <button
+        class="text-[#ffffff] flex justify-center items-center w-[200px] h-[45px] bg-[#c53831] text-[16px] font-semibold my-6 cursor-pointer rounded-[75px] hover:bg-[#862d28] hover:shadow-md transition duration-300"
+      >
+        Карт үзэх
+      </button>
+    </NuxtLink>
   </div>
 </template>

@@ -16,6 +16,9 @@ export default {
       border: {
         'border': '1px solid #7a7a7a'
       },
+      gridTemplateColumns: {
+        'custom': '1fr 1.5fr 1fr 1fr 1fr 1fr',
+      },
     },
   },
   plugins: [],

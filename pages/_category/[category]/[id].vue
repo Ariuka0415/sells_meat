@@ -184,6 +184,12 @@ const route = useRoute();
 const category = route.params.category;
 const id = Number(route.params.id);
 const value = ref(0);
+const emit = defineEmits(["cartIncrease"]);
+
+// const increaseCart = () => {
+//   cartCount.value++;
+//   emit("cartIncrease", cartCount.value);
+// };
 
 const all_product = [
   {
