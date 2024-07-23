@@ -1,7 +1,7 @@
 <template>
   <div class="my-10">
     <div
-      class="crum flex items-center gap-[8px] text-[#3d4142] text-[16px] font-bold my-[30px] mx-[80px]"
+      class="crum flex items-center gap-[8px] text-[#3d4142] text-[16px] font-bold my-[30px] mx-[80px] xl:my-[30px] xl:mx-[50px] xl:text-[14px] lg:my-[30px] lg:mx-[30px] lg:text-[13px] md:my-[30px] md:mx-[10px] md:text-[12px] sm:text-[10px]"
     >
       ГЭР
       <Icon name="material-symbols:arrow-forward-ios" style="color: black" />
@@ -13,80 +13,90 @@
         currenProduct.name
       }}</span>
     </div>
-    <div class="display flex my-0 mx-[100px]">
-      <div class="display-left gap-[15px]">
-        <div class="mainImg w-[540px] object-cover">
+    <div
+      class="display flex my-0 mx-[100px] xl:my-0 xl:mx-[60px] lg:my-0 lg:mx-[30px] md:flex md:flex-col md:mx-[50px] sm:mx-2"
+    >
+      <div
+        class="display-left gap-[15px] xl:gap-[10px] lg:gap-[5px] md:flex md:flex-col md:justify-center md:items-center"
+      >
+        <div
+          class="mainImg w-[540px] xl:w-[520px] object-cover lg:w-[400px] md:w-[600px] sm:w-[300px] sm:h-[400px]"
+        >
           <img
-            class="h-[550px] object-cover"
+            class="h-[550px] object-cover lg:h-[450px] md:w-full"
             v-if="currenProduct.category === 'үхэр'"
             src="https://crowdcow-images.imgix.net/https%3A%2F%2Fcrowdcow-uploads.imgix.net%2Fpicture%2Fproduction%2Figg3bjkkud0%2FRibeye_Beef_Product_Grain_1.jpg?ixlib=rails-2.1.4&fit=crop&alt=Image%20of%20Boneless%20Ribeye%20Steak&data=%7B%22product-detail--image-switcher-target%22%3D%3E%22mainImage%22%7D&auto=compress%2Cformat&cs=srgb&w=720&h=720&s=1f2283bc7fccf835ae547285f320fe99"
             alt=""
           />
           <img
             v-else-if="currenProduct.category === 'гахай'"
-            class="h-[550px] object-cover"
+            class="h-[550px] object-cover lg:h-[450px] md:w-full"
             src="https://crowdcow-images.imgix.net/https%3A%2F%2Fcrowdcow-uploads.imgix.net%2Fpicture%2Fproduction%2Fijhd1ezdr3k%2Fproduct_TrueStory_FullCrop_BonelessPorkChop_RawStyled_.jpg?ixlib=rails-2.1.4&fit=crop&alt=Image%20of%20Kurobuta%20Boneless%20Pork%20Chop&data=%7B%22product-detail--image-switcher-target%22%3D%3E%22mainImage%22%7D&auto=compress%2Cformat&cs=srgb&w=720&h=720&s=020da7e75a8024c3fdda901e2b5be1dd"
             alt=""
           />
           <img
             v-else-if="currenProduct.category === 'хонь'"
-            class="h-[550px] object-cover"
+            class="h-[550px] object-cover lg:h-[450px] md:w-full"
             src="https://crowdcow-images.imgix.net/https%3A%2F%2Fcrowdcow-uploads.imgix.net%2Fpicture%2Fproduction%2Fidvczlfpepg%2Fculotte_w_cap_Wagyu_Cross_Product_Mishima-Edit.jpg?ixlib=rails-2.1.4&fit=crop&alt=Image%20of%20Picanha&data=%7B%22product-detail--image-switcher-target%22%3D%3E%22mainImage%22%7D&auto=compress%2Cformat&cs=srgb&w=720&h=720&s=2347987a3934eb06e8d4b441d3867029"
             alt=""
           />
           <img
             v-else-if="currenProduct.category === 'ямаа'"
-            class="h-[550px] object-cover"
+            class="h-[550px] object-cover lg:h-[450px] md:w-full"
             src="https://crowdcow-images.imgix.net/https%3A%2F%2Fcrowdcow-uploads.imgix.net%2Fpicture%2Fproduction%2Fiw9kpnxhv7o%2FBone-in_ribeye_Wagyu_Cross_Product_Mishima.jpg?ixlib=rails-2.1.4&fit=crop&alt=Image%20of%20Wagyu%20Bone-in%20Ribeye%20Steak&data=%7B%22product-detail--image-switcher-target%22%3D%3E%22mainImage%22%7D&auto=compress%2Cformat&cs=srgb&w=720&h=720&s=bd81f2bc874df7e9244b09d681c2fb56"
             alt=""
           />
           <img
             v-else-if="currenProduct.category === 'тахиа'"
-            class="h-[550px] object-cover"
+            class="h-[550px] object-cover lg:h-[450px] md:w-full"
             src="https://crowdcow-images.imgix.net/https%3A%2F%2Fcrowdcow-uploads.imgix.net%2Fpicture%2Fproduction%2Fie30cgsxkth%2FThighs_Chicken_Product_Pasture_Raised.jpg?ixlib=rails-2.1.4&fit=crop&alt=Image%20of%20Heirloom%20Chicken%20Thighs&data=%7B%22product-detail--image-switcher-target%22%3D%3E%22mainImage%22%7D&auto=compress%2Cformat&cs=srgb&w=720&h=720&s=ede5fe3f5ac0dbf4eed5fc7e8eda9406"
             alt=""
           />
           <img
             v-else-if="currenProduct.category === 'бусад'"
-            class="h-[550px] w-[586px] object-cover"
+            class="h-[550px] w-[586px] object-cover lg:h-[450px] md:w-full"
             src="https://crowdcow-images.imgix.net/https%3A%2F%2Fcrowdcow-uploads.imgix.net%2Fpicture%2Fproduction%2Ficcwkm6dygp%2FSteak-Lover-Box.jpg?ixlib=rails-2.1.4&fit=crop&alt=Image%20of%20Steak%20Lover%20Box&data=%7B%22product-detail--image-switcher-target%22%3D%3E%22mainImage%22%7D&auto=compress%2Cformat&cs=srgb&w=720&h=720&s=177851ca197da45870b2fd91e107840d"
             alt=""
           />
         </div>
-        <div class="img-list flex gap-[10px] my-3 justify-center items-center">
+        <div
+          class="img-list flex gap-[10px] my-3 justify-center items-center xl:gap-[5px] lg:gap-[3px] md:gap-[23px] sm:mt-16 sm:gap-3"
+        >
           <img
-            class="h-[100px] w-[100px] object-cover"
+            class="h-[100px] w-[100px] lg:w-[80px] lg:h-[80px] md:h-[100px] md:w-[100px] object-cover sm:h-[50px] sm:w-[50px]"
             :src="currenProduct.image"
             alt=""
           />
           <img
-            class="h-[100px] w-[100px] object-cover"
+            class="h-[100px] w-[100px] lg:w-[80px] lg:h-[80px] object-cover md:h-[100px] md:w-[100px] sm:h-[50px] sm:w-[50px]"
             :src="currenProduct.image"
             alt=""
           />
           <img
-            class="h-[100px] w-[100px] object-cover"
+            class="h-[100px] w-[100px] lg:w-[80px] lg:h-[80px] object-cover md:h-[100px] md:w-[100px] sm:h-[50px] sm:w-[50px]"
             :src="currenProduct.image"
             alt=""
           />
           <img
-            class="h-[100px] w-[100px] object-cover"
+            class="h-[100px] w-[100px] lg:w-[80px] lg:h-[80px] object-cover md:h-[100px] md:w-[100px] sm:h-[50px] sm:w-[50px]"
             :src="currenProduct.image"
             alt=""
           />
           <img
-            class="h-[100px] w-[100px] object-cover"
+            class="h-[100px] w-[100px] lg:w-[80px] lg:h-[80px] object-cover md:h-[100px] md:w-[100px] sm:h-[50px] sm:w-[50px]"
             :src="currenProduct.image"
             alt=""
           />
         </div>
       </div>
-      <div class="diplay-right flex flex-col my-0 mx-[70px]">
-        <h1 class="text-[#3d3d3d] text-[40px] font-bold">
+      <div
+        class="diplay-right flex flex-col my-0 mx-[70px] xl:my-0 xl:ml-[30px] md:mx-[10px]"
+      >
+        <h1 class="text-[#3d3d3d] text-[40px] font-bold xl:text-[30px]">
           {{ currenProduct.name }}
         </h1>
         <div
-          class="stars flex items-center mt-[13px] gap-[5px] text-[#1c1c1c] text-[16px]"
+          class="stars flex items-center mt-[13px] gap-[5px] text-[#1c1c1c] text-[16px] xl:text-[14px] lg:mt-[8px] md:text-[20px]"
         >
           <Icon name="ic:sharp-star-purple500" style="color: #c53831" />
           <Icon name="ic:sharp-star-purple500" style="color: #c53831" />
@@ -96,7 +106,7 @@
           <p>(54)</p>
         </div>
         <div
-          class="prices flex my-[10px] mx-0 gap-[20px] text-[20px] font-bold"
+          class="prices flex my-[10px] mx-0 gap-[20px] text-[20px] font-bold xl:my-[10px] xl:mx-0 xl:text-[18px] lg:my-1 md:text-[25px]"
         >
           <div>${{ currenProduct.new_price }}</div>
           <div
@@ -106,63 +116,77 @@
             ${{ currenProduct.old_price }}
           </div>
         </div>
-        <div class="description my-4">
+        <div class="description my-4 xl:text-[13px] lg:my-2 md:text-[18px]">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, amet
           fugiat praesentium impedit earum mollitia delectus quisquam neque,
           repellat unde, minus ut sequi voluptate labore atque aperiam quibusdam
           eligendi sint!
         </div>
-        <h1 class="text-[#3d3d3d] my-[10px] gap-5 text-[24px] font-bold">
+        <h1
+          class="text-[#3d3d3d] my-[10px] gap-5 text-[24px] font-bold lg:my-[4px] lg:text-[18px] md:text-[25px]"
+        >
           Жин: <span class="ml-14 font-medium">1кг</span>
         </h1>
-        <h1 class="text-[#3d3d3d] my-[10px] gap-5 text-[24px] font-bold">
+        <h1
+          class="text-[#3d3d3d] my-[10px] gap-5 text-[24px] font-bold lg:my-[4px] lg:text-[18px] md:text-[25px]"
+        >
           Ангилал:
           <span class="ml-14 font-medium capitalize">{{
             currenProduct.category
           }}</span>
         </h1>
         <div class="addCart flex justify-between items-center">
-          <h6 class="text-[24px] font-bold my-[20px]">
+          <h6
+            class="text-[24px] font-bold my-[20px] lg:text-[18px] lg:my-[15px] md:text-[25px]"
+          >
             Нийт үнэ: ${{ parseInt(currenProduct.new_price * value) }}
           </h6>
           <div class="flex items-center">
             <button
               @click="value--"
-              class="rounded-full w-[30px] flex items-center justify-center h-[30px] bg-[#ede9e8] mx-[10px] hover:bg-[#e1e4ea]"
+              class="rounded-full w-[30px] flex items-center justify-center h-[30px] bg-[#ede9e8] mx-[10px] hover:bg-[#e1e4ea] lg:w-[20px] lg:h-[20px]"
             >
               <Icon name="ic:round-minus" style="color: black" />
             </button>
-            <span class="text-[20px] font-semibold">{{ value }}</span>
+            <span class="text-[20px] font-semibold lg:text-[15px]">{{
+              value
+            }}</span>
             <button
               @click="value++"
-              class="rounded-full w-[30px] flex items-center justify-center h-[30px] bg-[#ede9e8] mx-[10px] hover:bg-[#e1e4ea]"
+              class="rounded-full w-[30px] flex items-center justify-center h-[30px] bg-[#ede9e8] mx-[10px] hover:bg-[#e1e4ea] lg:w-[20px] lg:h-[20px]"
             >
               <Icon name="material-symbols:add-rounded" style="color: black" />
             </button>
           </div>
         </div>
         <button
-          class="text-[#ffffff] flex justify-center items-center w-[160px] mx-[5px] h-[45px] bg-[#c53831] text-[16px] font-semibold my-3 cursor-pointer hover:bg-[#862d28] hover:shadow-md transition duration-300"
+          class="text-[#ffffff] flex justify-center items-center w-[160px] mx-[5px] h-[45px] bg-[#c53831] text-[16px] font-semibold my-3 cursor-pointer hover:bg-[#862d28] hover:shadow-md transition duration-300 lg:w-[140px] lg:h-[35px] lg:text-[13px] md:w-[160px] md:h-[45px] md:text-[16px]"
         >
           Картанд хийх
         </button>
 
         <div
-          class="giftBox flex my-5 justify-start items-center text-[25px] font-semibold text-[#3d3d3d]"
+          class="giftBox flex my-5 justify-start items-center text-[25px] font-semibold text-[#3d3d3d] lg:my-2"
         >
           <Icon name="flowbite:gift-box-solid" style="color: black" />
-          <h1 class="ml-2">Бэлгийн багц руу хийх</h1>
+          <h1 class="ml-2 lg:text-[20px] md:text-[25px]">
+            Бэлгийн багц руу хийх
+          </h1>
         </div>
       </div>
     </div>
     <div
       v-if="currenProduct.category != 'бусад'"
-      class="relatedProducts h-[80vh] my-10 flex flex-col justify-center"
+      class="relatedProducts my-10 flex flex-col justify-center md:gap-[6px] "
     >
-      <h1 class="text-[30px] font-bold mx-[80px] my-6">
+      <h1
+        class="text-[30px] font-bold mx-[80px] my-6 md:text-[20px] md:mx-[50px]"
+      >
         Холбоотой бүтээгдэхүүн
       </h1>
-      <div class="products mt-5 mb-10 mx-[100px] grid grid-cols-4 gap-6">
+      <div
+        class="popular-item flex gap-6 mt-[50px] xl:gap-[20px] xl:mt-[30px] lg:gap-[15px] lg:mt-[20px] md:gap-[10px] sm:grid sm:grid-cols-2 sm:gap-0 sm:ml-6  justify-center items-center"
+      >
         <Item
           v-for="(item, id) in filteredProducts"
           :key="id"

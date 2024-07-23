@@ -48,6 +48,9 @@ export default {
       transitionDuration: {
         'slow': '500ms',
       },
+      gridTemplateColumns: {
+        'custom2': '0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr',
+      },
     },
   },
   plugins: [],

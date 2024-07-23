@@ -1,6 +1,6 @@
 <template>
   <div
-    class="popular flex flex-col items-center gap-[20px] my-[100px] md:gap-[6px] md:my-[20px] "
+    class="popular flex flex-col items-center gap-[20px] my-[100px] md:gap-[6px] md:my-[20px]"
   >
     <h1
       class="text-[#312828] text-[50px] font-bold xl:text-[40px] lg:text-[30px] md:text-[20px]"
