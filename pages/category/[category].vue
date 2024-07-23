@@ -25,14 +25,15 @@
         </nav>
       </div>
       <h1
-        class="flex justify-center items-center uppercase font-semibold text-[25px] text-[#3d4142] my-12"
+        class="flex justify-center items-center uppercase font-semibold text-[25px] text-[#3d4142] my-12 sm:w-[80%] sm:m-auto sm:my-10 sm:text-[20px]"
       >
         хамгийн чанартайг манайхаас
-        <span class="font-bold mx-2"> "{{ category }}"</span>
+        <span class="font-bold mx-2 sm:hidden"> "{{ category }}"</span>
       </h1>
     </div>
+
     <div
-      class="indexSort flex my-[0px] mx-[100px] justify-between items-center text-[20px] text-[#3d4142]"
+      class="indexSort flex my-[0px] mx-[100px] justify-between items-center text-[20px] text-[#3d4142] sm:mx-2"
     >
       <p><span class="font-semibold">Нийт бүтээгдэхүүнээс </span>Үзэлтэд 1-4</p>
       <div
@@ -42,7 +43,7 @@
         <Icon name="material-symbols:arrow-drop-down" style="color: black" />
       </div>
     </div>
-    <div class="products mt-5 mb-20 mx-[100px] grid grid-cols-4 gap-6">
+    <div class="products mt-5 mb-20 mx-[100px] grid grid-cols-4 gap-6 sm:grid sm:grid-cols-2 sm:mx-14 sm:gap-10">
       <Item
         v-for="(item, id) in filteredProducts"
         :key="id"
