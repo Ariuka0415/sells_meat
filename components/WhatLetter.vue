@@ -20,7 +20,7 @@
       >
         <img
           class="w-[60px] h-[60px] my-1 md:w-[40px] md:h-[40px]"
-          src="file:///C:/Users/Swift%203/Downloads/Vector%20(5).svg"
+          src="file:///C:/Users/Swift%203/Documents/sellsMeat_ecommerce/frontend/assets/Vector%20(5).svg"
           alt=""
         />
         <h1
@@ -56,7 +56,7 @@
       >
         <img
           class="w-[60px] h-[60px] my-2 md:w-[40px] md:h-[40px]"
-          src="file:///C:/Users/Swift%203/Downloads/Vector%20(6).svg"
+          src="file:///C:/Users/Swift%203/Documents/sellsMeat_ecommerce/frontend/assets/Vector%20(6).svg"
           alt=""
         />
         <h1
