@@ -18,11 +18,11 @@
       <div
         class="answer1 bg-[#ffffff] p-[16px] pb-[16px] w-[28%] flex flex-col justify-center items-center shadow md:w-full md:my-4"
       >
-        <!-- <img
+        <img
           class="w-[60px] h-[60px] my-1 md:w-[40px] md:h-[40px]"
           src="file:///C:/Users/Swift%203/Documents/sellsMeat_ecommerce/frontend/assets/Vector%20(5).svg"
           alt=""
-        /> -->
+        />
         <h1
           class="uppercase text-[15px] font-semibold my-2 md:text-[13px] sm:text-[12px]"
         >
@@ -36,11 +36,11 @@
       <div
         class="answer2 bg-[#ffffff] p-[16px] pb-[16px] w-[28%] flex flex-col justify-center items-center shadow md:w-full md:my-3"
       >
-        <!-- <img
+        <img
           class="w-[60px] h-[60px] my-2 md:w-[40px] md:h-[40px]"
           src="file:///C:/Users/Swift%203/Downloads/Group.svg"
           alt=""
-        /> -->
+        />
         <h1
           class="uppercase text-[15px] font-semibold my-2 md:text-[13px] sm:text-[12px]"
         >
@@ -54,11 +54,11 @@
       <div
         class="answer3 bg-[#ffffff] p-[16px] pb-[16px] w-[28%] flex flex-col justify-center items-center shadow md:w-full md:my-3"
       >
-        <!-- <img
+        <img
           class="w-[60px] h-[60px] my-2 md:w-[40px] md:h-[40px]"
           src="file:///C:/Users/Swift%203/Documents/sellsMeat_ecommerce/frontend/assets/Vector%20(6).svg"
           alt=""
-        /> -->
+        />
         <h1
           class="uppercase text-[15px] font-semibold my-2 md:text-[13px] sm:text-[12px]"
         >
